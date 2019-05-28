@@ -97,10 +97,10 @@ class OrderDetailForm extends Component {
     render() {
         return (
             <form onSubmit={this.handleSubmit}>
-                <label htmlFor="order">Order user id:</label>
+                <label htmlFor="order">Order id:</label>
                 <select id="order" name="order" value={this.state.order} onChange={this.handleChange}>
                     {this.state.orders.map((o) => <option
-                        key={o.id} value={o.id}>{o.address}</option>)}
+                        key={o.id} value={o.id}>{o.id}</option>)}
                 </select>
                 <label htmlFor="product">Product name:</label>
                 <select id="product" name="product" value={this.state.product} onChange={this.handleChange}>

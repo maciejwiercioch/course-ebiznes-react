@@ -66,7 +66,7 @@ class OrderForm extends Component {
                 <label htmlFor="user">User:</label>
                 <select id="user" name="user" value={this.state.user} onChange={this.handleChange}>
                     {this.state.users.map((u) => <option
-                        key={u.id} value={u.id}>{u.address}</option>)}
+                        key={u.id} value={u.id}>{u.email}</option>)}
                 </select>
                 <label htmlFor="address">Address:</label>
                 <input id="address" name="address" type="text" value={this.state.address} onChange={this.handleChange}/>
